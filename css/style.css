@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* colorway 
-main color: white, 46474C
+main color: white, #46474C
 accent color: #ff953e */
 
 /* Clear margin and padding */
@@ -38,6 +38,16 @@ p {
     text-align: center;
 }
 
+.bg-light {
+    background: #f4f4f4;
+    color: #46474C;
+}
+
+.bg-dark {
+    background: #46474C;
+    color: white;
+}
+
 .l-heading {
     font-size: 4rem;
     margin-bottom: 0.75rem;
@@ -55,17 +65,18 @@ p {
     margin-bottom: 2rem;
 }
 
-.py-1 {
-    padding: 1.5rem 0;
-}
+.py-1 { padding: 1.5rem 0; }
 
-.py-2 {
-    padding: 2rem 0;
-}
+.py-2 { padding: 2rem 0; }
 
-.py-3 {
-    padding: 3rem 0;
-}
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+
+.p-2 { padding: 2rem; }
+
+.p-3 { padding: 3rem; }
+
 
 .button {
     display: inline-block;
@@ -83,6 +94,16 @@ p {
 .button-dark {
     background: #46474C;
     color: white;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
 }
 
 /* navigation bar */
@@ -165,6 +186,6 @@ nav h1 a {
     flex: 1;
 }
 
-#who .who-img {
-    background: url()
+#about .about-img {
+    background: url('../img/profile.jpg') no-repeat center center/cover;
 }
