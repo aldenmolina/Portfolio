@@ -1,16 +1,12 @@
-/* add fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-/* colorway 
-main color: white, #46474C
-accent color: #ff953e */
-
 /* Clear margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Utility Classes */
+
 
 /* main style */
 html, body {
@@ -26,103 +22,28 @@ p {
     margin: 0.75rem 0;
 }
 
-/* utility classes */
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 2rem;
-    overflow: hidden;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.bg-light {
-    background: #f4f4f4;
-    color: #46474C;
-}
-
-.bg-dark {
-    background: #46474C;
-    color: white;
-}
-
-.bg-primary {
-    background: #ff953e;
-    color: white;   
-}
-
-.l-heading {
-    font-size: 4rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-}
-
-.m-heading {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-}
-
-.lead {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-}
-
-.py-1 { padding: 1.5rem 0; }
-
-.py-2 { padding: 2rem 0; }
-
-.py-3 { padding: 3rem 0; }
-
-.p-1 { padding: 1.5rem; }
-
-.p-2 { padding: 2rem; }
-
-.p-3 { padding: 3rem; }
-
-
-.button {
-    display: inline-block;
-    color: white;
-    background-color: #ff953e;
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background: #e97f29;
-}
-
-.button-dark {
-    background: #46474C;
-    color: white;
-}
-
-.list {
-    margin: 0.5rem 0;
-    list-style: none;
-}
-
-.list li {
-    padding: 0.5rem 0;
-    border-bottom: #444 dotted 1px;
-}
-
-/* navigation bar */
+/* Navigation Bar */
 #navbar {
     display: flex;
     position: sticky;
     top: 0;
-    background: #46474C;
-    color: white;
+    background-color: white;
+    color: #46474C;
     justify-content: space-between;
     z-index: 1;
-    padding: 1rem;
-    /* Look up way to make nav bar change when scrolling
-    same with background color changing depending on the background*/
+    padding: 0.5rem;
+}
+
+.logo img {
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    transition: 0.3s ease-out;
+}
+
+.logo img:hover {
+    margin-left: 2.2rem;
+    transition: 0.3s;
 }
 
 #navbar ul {
@@ -132,99 +53,298 @@ p {
 }
 
 #navbar ul li a {
-    color: white;
-    padding: 0.75rem;
-    margin: 0 0.25rem;
+    font-size: 0.8rem;
+    color: #46474C;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 0.75rem;
+    transition: border 0.2s linear;
 }
 
 #navbar ul li a:hover {
-    background: #ff953e;
+    border: 1px solid #ff953e;
     border-radius: 5px;
+    transition: border 0.2s linear;
 }
 
-nav h1 a {
-    color: white;
-}
-
-/* Showcase */
+/* Header : Section */
 #showcase {
-    background: #333 url('../img/office.jpg')
-    no-repeat center center/cover;
-    height: 100vh;
-    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 11px;
+    padding-bottom: 5rem;
+    max-width: 1000px;
 }
 
-#showcase .showcase-content {
+.column1 img {
+    transform: rotate(-90deg);
+    height: 2.5rem;
+    margin-top: 8rem;
+    margin-right: -6rem;
+    transition: 2s ease-out;
+}
+
+.column1 img:hover {
+    margin-top: 14rem;
+    transition: 1.5s;
+}
+
+
+.column2 {
+    background-color: #46474C;
+    position: relative;
+    height: 25rem;
+    color:#46474C;
+}
+
+
+.column3 {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0 2rem;
-    position: absolute;
-    top: 65px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    justify-content: space-around;
+    color: #46474C;
+    padding: 0 0 0 5rem;
 }
 
-/* Section: Portfolio */
-.items {
-    display: flex;
-    padding: 1rem;
+.column3 h1 {
+    font-family: 'Abril Fatface';
+    font-size: 3rem;
 }
 
-.item {
-    flex: 1;
-    text-align: center;
-    padding: 1rem;
+.code {
+    animation-name: code;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.create {
+    animation-name: create;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.cultivate {
+    animation-name: cultivate;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.column3 p, a {
+    font-family: 'Open Sans Condensed';
+    max-width: 30rem;
+    animation-name: column3-p;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.button {
+    color: #46474C;
+    border-radius: 5px;
+    display: inline-block;
+    width: fit-content;
+    transition: 0.3s ease-out;
+}
+
+.button i {
+    color: #46474C;
+}
+
+.button:hover {
+    margin-left: 0.2rem;
+    transition: 0.3s;
 }
 
 /* Section: About Me */
 #about {
     display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
-#about div {
-    flex: 1;
+.columna {
+    background: #46474C;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    font-family: 'Open Sans Condensed';
+    max-width: 15rem;
+    padding: 1rem;
+    padding-right: 1.5;
+    margin-top: 2rem;
+    margin-right: -3rem;
+    height: 30rem;
+    z-index: 1;
 }
 
-#about .about-img {
-    background: url('../img/profile.jpg') no-repeat center center/cover;
+.columna .quote {
+    font-size: 0.8rem;
 }
 
-/* Section: Connect*/
-#connect .items {
+.columna a {
+    background: #ff953e;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    color: white;
+    transition: 0.3s;
+    animation-name: columna;
+    animation-duration: 3s;
+}
+
+.columna a:hover {
+    margin-left: 0.75rem;
+    transition: 0.3s;
+}
+
+#about img {
+    max-height: 40rem;
+}
+
+/* Section: Portolfio */
+#portfolio {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans Condensed';
+    background: #F5F5F5;
+}
+
+.portfolio2 {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.portfolioA {
     display: flex;
 }
 
-#connect .items img {
-    display: block;
-    margin: auto;
-    width: 60%;
+.portfolioA-text {
+    max-width: 15rem;
+    margin: 1rem 1rem 0 1rem;
+}
+.portfolioA img {
+    max-height: 5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-right: 6rem;
+    transition: 0.3s ease-out;
+}
+
+.portfolioA img:hover {
+    max-height: 6rem;
+    transition: 0.3s;
+}
+
+.portfolio-right {
+    display: flex;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    background: #46474C;
+    max-height: 15rem;
+    color: white;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.skills h3 {
+    color: #ff953e;
+    margin-bottom: 1rem;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.portfolio-head {
+    font-family: 'Open Sans Condensed';
+    color: #46474C;
+    max-width: 15rem;
+    padding: 2rem;
+    text-align: right;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons i {
+    color: #46474C;
+    margin-left: 0.5rem;
 }
 
 /* Section: Contact */
 #contact {
+    font-family: 'Open Sans Condensed';
     display: flex;
+    justify-content: center;
 }
 
-#contact .contact-form {
-    flex: 1;
+.contact-text {
+    max-width: 25rem;
+    color: #46474C;
+    margin-top: 2rem;
+    padding: 1rem;
 }
 
-#contact .contact-form .form-group {
-    margin: 0.75rem;
+.contact-icons i {
+    margin: 0.3rem;
 }
 
-#contact .contact-form label {
-    display: block;
+
+/* Animations */
+@keyframes code {
+    0% {
+        margin-left: 30rem;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
 }
 
-#contact .contact-form input,
-#contact .contact-form textarea {
-    width: 50%;
-    padding: 0.5rem;
+@keyframes create {
+    0% {
+        margin-left: 30rem;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes cultivate {
+    0% {
+        margin-left: 30rem;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes column3-p {
+    0% {
+        margin-top: 30rem;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+
+/* Footer */
+#main-footer {
+    font-family: 'Open Sans Condensed';
+    font-size: 0.7rem;
+    text-align: center;
+    color: #46474C;
+    padding: 0, 0.5rem;
 }

@@ -2,14 +2,22 @@
 <html lang="en">
 
 <head>
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description"
         content="The Portfolio showcasing the experience and story of Alden Molina a full stack software developer from Cleveland Ohio">
     <meta name="keywords" content="alden molina, cleveland, ohio, software, developer">
+
+    <!-- FONTS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+    <!-- TITLE / STYLE -->
     <title>Alden Molina Portfolio | Software Developer</title>
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
     <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css" />
@@ -20,116 +28,139 @@
 
     <!--Navigation Bar-->
     <nav id="navbar">
-        <h1 class="logo">
-            <a href="index.html">Alden Molina</a>
+        <h1 class="logo"><a href="#home"><img src="img/logo.png"></a>
         </h1>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#connect">Connect</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
-    <!-- Header : Showcase -->
+    <!-- Header: Showcase -->
     <header id="showcase">
-        <div class="showcase-content">
-            <h1 class="l-heading">
-                Alden Molina
-            </h1>
-            <p class="lead">
-                Full Stack Junior Software Developer
-            </p>
-            <a href="#portfolio" class="button">View Portfolio</a>
+        <div class="column1">
+            <a href="#about">
+                <img src="img/Name.png">
+            </a>
+        </div>
+        <div class="column2">
+            <p class="bar">l</p>
+        </div>
+        <div class="column3">
+            <h1 class="code">code.</h1>
+            <h1 class="create">create.</h1>
+            <h1 class="cultivate">cultivate.</h1>
+            <p>Motivated full-stack junior software developer. Experience with creating professionally programmed
+                applications with emphasis on team-oriented dynamics. Interest in modern and contemporary designs, and
+                innovative programming.</p>
+            <p>Continue to see my work.</p>
+            <a href="#portfolio" class="button"><i class="far fa-arrow-alt-circle-right"></i></See></a>
         </div>
     </header>
 
-    <!-- Section: Portfolio-->
-    <section id="Porfolio" class="bg-light py-1">
-        <div class="container">
-            <h2 class="m-heading text-center">Portfolio</h2>
-            <div class="items">
-                <div class="item">
-                    <div>
-                        <h3>Virtual Pets Amok</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div>
-                        <h3>Web Crawler</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div>
-                        <h3>Portfolio</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Section: About Me -->
     <section id="about">
-        <div class="about-img"></div>
-        <div class="about-text bg-dark p-2">
-            <h2 class="m-heading">About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus unde molestias, explicabo ut
-                quas voluptatibus distinctio sed at. Perferendis est, nihil neque ut iusto velit iure corporis et
-                dignissimos.</p>
-            <h3>Experience</h3>
-            <ul class="list">
-                <li>Front End Development</li>
-                <li>C#.NET</li>
-                <li>SQL</li>
-                <li>Python</li>
-                <li>Unity</li>
-            </ul>
+        <article class="columna">
+            <h2>About Me</h2>
+            <p>I am a very passionate individual with a strong drive for learning and figuring things out. I started
+                teaching myself how to play instruments when I was younger. Now, I can play guitar, piano, and drums. My
+                desire then moved me towards photography and photo manipulation with Adobe Photoshop. I learned working
+                with cars after begging my mechanic of a friend to show me the ropes. I have always been interested in
+                learning and I used that same energy to learn coding and become a software developer.</p>
+            <p class="quote"><em>“Your work is to discover your work, and then with all your heart to give yourself to
+                    it.” – Buddha"</em></p>
+            <a href="#portfolio">View my work</a>
+        </article>
+        <img src="img/AboutMe.jpg">
+    </section>
+
+    <!-- Section: Portoflio -->
+    <section id="portfolio">
+        <div class="portfolio2">
+            <article class=portfolioA>
+                <div class=portfolioA-text>
+                    <h3>Python Web Crawler</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ea unde obcaecati, dolorem
+                        voluptates
+                        natus deserunt cum consequatur et perferendis.</p>
+                </div>
+                <a href="https://github.com/aldenmolina/PythonCrawler" target="_blank"><img src="img/spider.png"></a>
+            </article>
+            <article class=portfolioA>
+                <div class=portfolioA-text>
+                    <h3>Portfolio Web Design</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ea unde obcaecati, dolorem
+                        voluptates
+                        natus deserunt cum consequatur et perferendis.</p>
+                </div>
+                <a href="https://github.com/aldenmolina/Portfolio" target="_blank"><img src="img/portfolio.png"></a>
+            </article>
+            <article class=portfolioA>
+                <div class=portfolioA-text>
+                    <h3>Virtual Pets Amok</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ea unde obcaecati, dolorem
+                        voluptates
+                        natus deserunt cum consequatur et perferendis.</p>
+                </div>
+                <a href="https://github.com/anegronjr/VirtualPetsAmok" target="_blank"><img src="img/pets.png"></a>
+            </article>
+        </div>
+
+        </div>
+        <div class=portfolio-right>
+            <article class="portfolio-head">
+                <h1>Potfolio:</h1>
+                <h3>Work and Experience</h3>
+                <p>Here is a sample of the projects I have done. These are curated to show different skillsets that I
+                    have
+                    used throughout my coding career. Please use my current compilation as a sign of progress and future
+                    growth.<p>
+                        <p>Please click the project links to continue to the source codes.</p>
+                        <p>Thank You!</p>
+                        <div class="icons">
+                            <div><a href="www.linkedin.com/in/aldenmolina">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a></div>
+                            <div><a href="www.github.com/aldenmolina">
+                                    <i class="fab fa-github-square fa-2x"></i>
+                                </a></div>
+                        </div>
+            </article>
+            <article class="skills">
+                <h3>Tech Skills</h3>
+                <ul>
+                    <li>C#/.NET</li>
+                    <li>Python</li>
+                    <li>HTML5/CSS3</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Unity</li>
+                </ul>
+            </article>
         </div>
     </section>
 
-    <!-- Section: Connect -->
-    <section id="connect" class="py-1">
-        <div class="container">
-            <h2 class="m-heading text-center">
-                Connect
-            </h2>
-            <div class="items py-1">
-                <div><img src="img/Linkedin.png"></div>
-                <div><img src="img/Github.png"></div>
-            </div>
-    </section>
-
-    <!-- Section: Contact -->
+    <!-- Section: Contact-->
     <section id="contact">
-        <div class="contact-form bg-primary p-2">
-            <h2 class="m-heading">Contact</h2>
-            <p>Please use the form to contact me.</p>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="Enter Email Address">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <input type="text" name="message" id="message" placeholder="Enter Your Message">
-                </div>
-                <input type="sumbit" value="Send" class="button button-dark">
-            </form>
+        <div class="contact-text">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or ideas, I would love to hear them!</p>
+            <div class="contact-icons">
+                <i class="far fa-envelope fa-2x"></i>
+                <i class="fab fa-linkedin-in fa-2x"></i>
+                <i class="fab fa-github-alt fa-2x"></i>
+            </div>
+            <p class="quote"><em>“To effectively communicate, we must realize that we are all different in the way we perceive the
+                    world and use this understanding as a guide to our communication with others.”
+                    – Tony Robbins</em></p>
         </div>
     </section>
 
-</body>
+    <!-- Footer -->
+    <footer id="main-footer">
+        <p>Designed by Alden Molina, 2019</p>
+    </footer>
 
-</html>
+    <script src="js/main.js"></script>
