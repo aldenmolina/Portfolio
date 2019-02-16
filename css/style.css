@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+
+
 /* Clear margin and padding */
 * {
     margin: 0;
@@ -10,7 +16,7 @@
 
 /* main style */
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     line-height: 1.4;
 }
 
@@ -30,7 +36,7 @@ p {
     background-color: white;
     color: #46474C;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
     padding: 0.5rem;
 }
 
@@ -77,16 +83,20 @@ p {
     max-width: 1000px;
 }
 
-.column1 img {
+.column1 h1 {
     transform: rotate(-90deg);
     height: 2.5rem;
-    margin-top: 8rem;
-    margin-right: -6rem;
     transition: 2s ease-out;
+    font-family: 'Open Sans Condensed';
+    font-size: 2.5rem;
+    color: #46474C;
+    animation-name: name;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
-.column1 img:hover {
-    margin-top: 14rem;
+.about:hover {
+    margin-top: 18rem;
     transition: 1.5s;
 }
 
@@ -102,12 +112,12 @@ p {
 .column3 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between  ;
     color: #46474C;
     padding: 0 0 0 5rem;
 }
 
-.column3 h1 {
+.column3 h2 {
     font-family: 'Abril Fatface';
     font-size: 3rem;
 }
@@ -174,6 +184,7 @@ p {
     margin-right: -3rem;
     height: 30rem;
     z-index: 1;
+    animation-duration:
 }
 
 .columna .quote {
@@ -211,27 +222,30 @@ p {
 .portfolio2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: right;
 }
 
 .portfolioA {
     display: flex;
+    justify-content: center;
 }
 
 .portfolioA-text {
     max-width: 15rem;
-    margin: 1rem 1rem 0 1rem;
+    margin: 2.6rem 2rem 0 1rem;
 }
+
 .portfolioA img {
     max-height: 5rem;
     border-radius: 10px;
-    margin-top: 2rem;
-    margin-right: 6rem;
+    margin-top: 3rem;
     transition: 0.3s ease-out;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
 }
 
 .portfolioA img:hover {
-    max-height: 6rem;
+    max-height: 9rem;
     transition: 0.3s;
 }
 
@@ -247,6 +261,7 @@ p {
     color: white;
     padding: 1rem;
     margin-top: 3rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
 }
 .skills h3 {
     color: #ff953e;
@@ -273,6 +288,12 @@ p {
 .icons i {
     color: #46474C;
     margin-left: 0.5rem;
+    transition: 0.3s ease-out;
+}
+
+.icons i:hover {
+    font-size: 2.3rem;
+    transition: 0.3s;
 }
 
 /* Section: Contact */
@@ -289,12 +310,36 @@ p {
     padding: 1rem;
 }
 
+.contact-icons {
+    display: flex;
+}
+
 .contact-icons i {
     margin: 0.3rem;
+    color: #46474C;
+    transition: 0.3s ease-out;
+}
+
+.contact-icons i:hover {
+    font-size: 2.3rem;
+    transition: 0.3s;
 }
 
 
 /* Animations */
+@keyframes name {
+    0% {
+        opacity: 0;
+        margin-right: 3rem;
+        margin-top: 18rem;
+    }
+    100% {
+        opacity: 1;
+        margin-right: -4rem;
+        margin-top: 5rem;
+    }
+}
+
 @keyframes code {
     0% {
         margin-left: 30rem;
@@ -336,6 +381,24 @@ p {
     100% {
         margin-top: 0;
         opacity: 1;
+    }
+}
+
+@keyframes columna {
+    0% {
+        margin-right: 30rem;
+    }
+    100% {
+        margin-right: -3rem;
+    }
+}
+
+@keyframes about-image {
+    0% {
+        margin-left: 30rem;
+    }
+    100% {
+        margin-left: 0;
     }
 }
 

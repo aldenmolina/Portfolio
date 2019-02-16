@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
 
 
 // Smooth Scrolling
-$('#navbar a, .button').on('click', function (event) {
+$('#navbar a, .button, .button2').on('click', function (event) {
   if (this.hash !== '') {
     event.preventDefault();
 
@@ -29,9 +29,11 @@ $(document).ready(function () {
   var scroll_pos = 0;
   $(document).scroll(function () {
     scroll_pos = $(this).scrollTop();
-    if (scroll_pos > 1350) {
-      $("nav h1").css('color', 'white');
-      $("nav a").css('color', 'white');
+    if (scroll_pos > 1000) {
+      $("columna").css('animation-name', 'columna');
+    }
+    else {
+      
     }
 
   }
