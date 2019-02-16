@@ -144,7 +144,7 @@ p {
     font-family: 'Open Sans Condensed';
     max-width: 30rem;
     animation-name: column3-p;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
 }
 
@@ -157,11 +157,12 @@ p {
 }
 
 .button i {
+    font-size: 1.3rem;
     color: #46474C;
 }
 
 .button:hover {
-    margin-left: 0.2rem;
+    margin-left: 0.3rem;
     transition: 0.3s;
 }
 
@@ -217,13 +218,14 @@ p {
     justify-content: center;
     font-family: 'Open Sans Condensed';
     background: #F5F5F5;
+    margin: 0 2rem;
 }
 
 .portfolio2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: right;
+    margin-right: 5rem;
 }
 
 .portfolioA {
@@ -278,6 +280,10 @@ p {
     max-width: 15rem;
     padding: 2rem;
     text-align: right;
+}
+
+.portfolio-head h2 {
+    font-size: 2rem;
 }
 
 .icons {
