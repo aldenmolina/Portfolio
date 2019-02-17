@@ -25,18 +25,14 @@ $('#navbar a, .button, .button2').on('click', function (event) {
 });
 
 // Add animation on scroll
-$(document).ready(function () {
-  var scroll_pos = 0;
-  $(document).scroll(function () {
-    scroll_pos = $(this).scrollTop();
-    if (scroll_pos > 1000) {
-      $("columna").css('animation-name', 'columna');
+$(document).ready(function(){
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 700 ) {
+      $(".portfolio2").css("animation-name", "portfolio2");
+      $(".portfolio-right").css("animation-name", "portfolio-right")
     }
-    else {
-      
-    }
-
-  }
-  )
-}
-)
+    else if ($(document).scrollTop() > 5) { 
+      $(".columna").css("animation-name", "columna"); 
+    } 
+  });
+});

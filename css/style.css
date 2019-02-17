@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-
+@import url('https://fonts.googleapis.com/css?family=Kristi');
 
 
 /* Clear margin and padding */
@@ -32,6 +32,7 @@ p {
 #navbar {
     display: flex;
     position: sticky;
+    max-height: 2rem;
     top: 0;
     background-color: white;
     color: #46474C;
@@ -41,8 +42,7 @@ p {
 }
 
 .logo img {
-    height: 2rem;
-    margin-top: 1rem;
+    max-height: 2rem;
     margin-left: 2rem;
     transition: 0.3s ease-out;
 }
@@ -77,29 +77,21 @@ p {
 #showcase {
     display: flex;
     justify-content: center;
-    margin: 2rem auto;
+    margin: 4rem auto;
     padding: 11px;
     padding-bottom: 5rem;
     max-width: 1000px;
 }
 
-.column1 h1 {
-    transform: rotate(-90deg);
-    height: 2.5rem;
-    transition: 2s ease-out;
-    font-family: 'Open Sans Condensed';
-    font-size: 2.5rem;
-    color: #46474C;
+.column1 {
     animation-name: name;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
-.about:hover {
-    margin-top: 18rem;
-    transition: 1.5s;
+.column1 p {
+    text-align: center;
 }
-
 
 .column2 {
     background-color: #46474C;
@@ -112,7 +104,7 @@ p {
 .column3 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between  ;
+    justify-content: space-around;
     color: #46474C;
     padding: 0 0 0 5rem;
 }
@@ -185,7 +177,7 @@ p {
     margin-right: -3rem;
     height: 30rem;
     z-index: 1;
-    animation-duration:
+    animation-duration: 3s;
 }
 
 .columna .quote {
@@ -199,7 +191,6 @@ p {
     padding: 0.2rem 0.5rem;
     color: white;
     transition: 0.3s;
-    animation-name: columna;
     animation-duration: 3s;
 }
 
@@ -225,7 +216,8 @@ p {
     display: flex;
     flex-direction: column;
     text-align: right;
-    margin-right: 5rem;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .portfolioA {
@@ -253,6 +245,8 @@ p {
 
 .portfolio-right {
     display: flex;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .skills {
@@ -265,8 +259,10 @@ p {
     margin-top: 3rem;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
 }
+
+
 .skills h3 {
-    color: #ff953e;
+    color: white;
     margin-bottom: 1rem;
 }
 
@@ -286,21 +282,55 @@ p {
     font-size: 2rem;
 }
 
-.icons {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.icons i {
-    color: #46474C;
-    margin-left: 0.5rem;
+.resume a {
+    background: #ff953e;
+    color: white;
+    padding: 0.25rem;
+    border-radius: 5px;
     transition: 0.3s ease-out;
 }
 
-.icons i:hover {
-    font-size: 2.3rem;
+.resume a:hover {
+    margin-right: 0.5rem;
     transition: 0.3s;
 }
+
+/* Section: Goals */
+#goals {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 15rem;
+}
+
+.future {
+    background: #46474C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 2rem 1rem 0 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+}
+
+.past {
+    margin: 2rem;
+}
+
+.experience {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.experience1 {
+    max-width: 30rem;
+    margin-right: 2rem;
+}
+
+.experience2 {
+    max-width: 30rem;
+}
+
 
 /* Section: Contact */
 #contact {
@@ -309,15 +339,25 @@ p {
     justify-content: center;
 }
 
+#contact img {
+    max-height: 25rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+}
+
 .contact-text {
     max-width: 25rem;
     color: #46474C;
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 1rem;  
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
 }
 
 .contact-icons {
     display: flex;
+    flex-direction: column;
 }
 
 .contact-icons i {
@@ -336,13 +376,11 @@ p {
 @keyframes name {
     0% {
         opacity: 0;
-        margin-right: 3rem;
-        margin-top: 18rem;
     }
     100% {
         opacity: 1;
-        margin-right: -4rem;
-        margin-top: 5rem;
+        margin-top: 7rem;
+        padding-right: 5rem;
     }
 }
 
@@ -408,6 +446,28 @@ p {
     }
 }
 
+@keyframes portfolio2 {
+    0% {
+        margin-right: 15rem;
+        margin-top: 15rem;
+    }
+    100% {
+        margin-right: 3rem;
+        margin-top: 0;
+    }
+}
+
+@keyframes portfolio-right {
+    0% {
+        margin-left: 15rem;
+        margin-top: 15rem;
+    }
+    100% {
+        margin-left: 3rem;
+        margin-top: 0;
+    }
+}
+
 
 /* Footer */
 #main-footer {
@@ -417,3 +477,5 @@ p {
     color: #46474C;
     padding: 0, 0.5rem;
 }
+
+
