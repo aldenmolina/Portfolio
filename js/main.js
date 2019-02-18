@@ -27,7 +27,10 @@ $('#navbar a, .button, .button2').on('click', function (event) {
 // Add animation on scroll
 $(document).ready(function(){
   $(window).scroll(function() {
-    if ($(document).scrollTop() > 700 ) {
+    if ($(document).scrollTop() > 1350 ) {
+      $("#goals").css("animation-name", "goals")
+    }
+    else if ($(document).scrollTop() > 700 ) {
       $(".portfolio2").css("animation-name", "portfolio2");
       $(".portfolio-right").css("animation-name", "portfolio-right")
     }
