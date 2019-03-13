@@ -62,6 +62,10 @@ html, body {
     background: url(../img/goals.jpg) no-repeat center center/cover;
 }
 
+.carousel-card6 {
+    background: url(../img/contacts.jpg) no-repeat center center/cover;
+}
+
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -235,4 +239,45 @@ html, body {
 
 .experience h5 {
     margin: 0.5rem 0;
+}
+
+/* Contact */
+#contact {
+    font-family: 'Open Sans Condensed';
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+#contact img {
+    max-height: 25rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+}
+
+.contact-text {
+    max-width: 25rem;
+    background: rgba(255,255,255,0.9);  
+    color: #46474C;
+    margin-top: 2rem;
+    padding: 1rem;  
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-icons i {
+    margin: 0.3rem;
+    color: #46474C;
+    transition: 0.3s ease-out;
+}
+
+.contact-icons i:hover {
+    font-size: 2.3rem;
+    transition: 0.3s;
 }
