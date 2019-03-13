@@ -219,9 +219,10 @@ html, body {
 .past {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0rem 0 1rem;
+    margin: 1rem 1rem 0 1rem;
     padding: 1rem;
     background: rgba(255,255,255,0.7);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 .past h3, .past p {
