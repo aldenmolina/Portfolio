@@ -1,507 +1,131 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-@import url('https://fonts.googleapis.com/css?family=Kristi');
+@import url('https://fonts.googleapis.com/css?family=Kristi|Abril+Fatface|Open+Sans+Condensed:300');
 
-
-/* Clear margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Utility Classes */
-
-
-/* main style */
 html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
     font-family: 'Open Sans Condensed', sans-serif;
-    line-height: 1.4;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    margin: 0.75rem 0;
-}
-
-/* Navigation Bar */
-#navbar {
-    display: flex;
-    position: sticky;
-    max-height: 2rem;
-    background-color: white;
-    color: #46474C;
-    justify-content: space-between;
-    z-index: 2;
-    padding: 0.5rem;
-    margin-left: 2rem;
-}
-
-#navbar a {
-    transition: 0.3s ease-out;
-}
-
-#navbar a:hover {
-    margin-left: 0.5rem;
-    transition: 0.3s;
-}
-
-.bracket {
-    color: #46474C;
-}
-
-.name-logo {
-    font-family: 'Kristi';
-    color: #D4AF37;
 }
 
 
-
-#navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-#navbar ul li a {
-    font-size: 0.8rem;
-    color: #46474C;
-    padding: 2px;
-    margin-left: 2px;
-    margin-right: 0.75rem;
-    transition: border 0.2s linear;
-}
-
-#navbar ul li a:hover {
-    border: 1px solid #ff953e;
-    border-radius: 5px;
-    transition: border 0.2s linear;
-}
-
-/* Header : Section */
-#showcase {
-    display: flex;
-    justify-content: center;
-    margin: 4rem auto;
-    padding: 11px;
-    padding-bottom: 5rem;
-    max-width: 1000px;
-}
-
-.column1 {
-    animation-name: name;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-.column1 p {
-    text-align: center;
-}
-
-.column2 {
-    background-color: #46474C;
+/* Carousel */
+#carousel {
     position: relative;
-    height: 25rem;
-    color:#46474C;
+    height: 100%;
+    width: 100%;
 }
 
-
-.column3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: #46474C;
-    padding: 0 0 0 5rem;
+.carousel-image {
+    width: 100%;
+    height: 100%;
 }
 
-.column3 h2 {
-    font-family: 'Abril Fatface';
-    font-size: 3rem;
+.carousel-container {
+    background: white;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-.code {
-    animation-name: code;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-.create {
-    animation-name: create;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards;
-}
-
-.cultivate {
-    animation-name: cultivate;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-.column3 p, a {
-    font-family: 'Open Sans Condensed';
-    max-width: 30rem;
-    animation-name: column3-p;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-}
-
-.button {
-    color: #46474C;
-    border-radius: 5px;
-    display: inline-block;
-    width: fit-content;
-    transition: 0.3s ease-out;
-}
-
-.button i {
-    font-size: 1.3rem;
-    color: #46474C;
-}
-
-.button:hover {
-    margin-left: 0.3rem;
-    transition: 0.3s;
-}
-
-/* Section: About Me */
-#about {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.columna {
-    background: #46474C;
-    color: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
-    font-family: 'Open Sans Condensed';
-    max-width: 15rem;
-    padding: 1rem;
-    padding-right: 1.5;
-    margin-top: 2rem;
-    margin-right: -3rem;
-    height: 30rem;
-    z-index: 1;
-    animation-duration: 3s;
-}
-
-.columna .quote {
-    font-size: 0.8rem;
-}
-
-.columna a {
-    background: #ff953e;
-    font-size: 0.8rem;
-    border-radius: 5px;
-    padding: 0.2rem 0.5rem;
-    color: white;
-    transition: 0.3s;
-    animation-duration: 3s;
-}
-
-.columna a:hover {
-    margin-left: 0.75rem;
-    transition: 0.3s;
-}
-
-#about img {
-    max-height: 40rem;
-}
-
-/* Section: Portolfio */
-#portfolio {
-    display: flex;
-    justify-content: center;
-    font-family: 'Open Sans Condensed';
-    background: #F5F5F5;
-    margin: 0 2rem;
-    padding-bottom: 4rem;
-}
-
-.portfolio2 {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-.portfolioA {
-    display: flex;
-    justify-content: center;
-}
-
-.portfolioA-text {
-    max-width: 15rem;
-    margin: 2.6rem 2rem 0 1rem;
-}
-
-.portfolioA img {
-    max-height: 5rem;
-    border-radius: 10px;
-    margin-top: 3rem;
-    transition: 0.3s ease-out;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
-}
-
-.portfolioA img:hover {
-    max-height: 9rem;
-    transition: 0.3s;
-}
-
-.portfolio-right {
-    display: flex;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-.skills {
-    display: flex;
-    flex-direction: column;
-    background: #46474C;
-    max-height: 15rem;
-    color: white;
-    padding: 1rem;
-    margin-top: 3rem;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
-}
-
-
-.skills h3 {
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.skills ul {
+.carousel-track {
+    padding: 0;
+    margin: 0;
     list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 2s ease-in-out;
 }
 
-.portfolio-head {
-    font-family: 'Open Sans Condensed';
+.carousel-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.carousel-card1 {
+    background: url(../img/Background-Header.jpg)
+}
+
+.carousel-card2 {
+    background: url(../img/background.jpg);
+}
+
+.carousel-card3 {
+    background: url(../img/background1.png);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+.carousel-button:hover {
     color: #46474C;
-    max-width: 15rem;
-    padding: 2rem;
-    text-align: right;
+    transition: 0.3s ease;
 }
 
-.portfolio-head h2 {
-    font-size: 2rem;
+.carousel-button-left {
+    left: 2rem;
 }
 
-.resume a {
-    background: #ff953e;
-    color: white;
-    padding: 0.25rem;
-    border-radius: 5px;
-    transition: 0.3s ease-out;
+.carousel-button-right {
+    right: 2rem;
 }
 
-.resume a:hover {
-    margin-right: 0.5rem;
-    transition: 0.3s;
+.carousel-button i {
+    font-size: 2.5rem;
 }
 
-/* Section: Goals */
-#goals {
+.carousel-nav {
+    display: none;
+}
+
+.is-hidden {
+    display: none;
+}
+
+/* Header: Welcome */
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: #46474C;
+    height: 100%;
+}
+
+.header-info {
     display: flex;
     flex-direction: column;
-    padding: 3rem 15rem;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-.goals {
-    animation-duration: 3s;
-}
-
-.future {
-    background: #46474C;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 1rem;
-    margin: 2rem 1rem 0 1rem;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
-}
-
-.past {
-    margin: 2rem;
-}
-
-.experience {
-    display: flex;
-    margin-top: 2rem;
-}
-
-.experience1 {
-    max-width: 30rem;
-    margin-right: 2rem;
-}
-
-.experience2 {
-    max-width: 30rem;
-}
-
-
-/* Section: Contact */
-#contact {
-    font-family: 'Open Sans Condensed';
-    display: flex;
     justify-content: center;
-    margin-bottom: 8rem;
+    margin-left: 10rem;
 }
 
-#contact img {
-    max-height: 25rem;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    padding: 1rem;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+.header h2 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 3.5rem;
+    margin: 0;
 }
 
-.contact-text {
-    max-width: 25rem;
-    color: #46474C;
-    margin-top: 2rem;
-    padding: 1rem;  
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+.header p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    width: 22rem;
 }
 
-.contact-icons {
+.header-continue {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    margin-right: 5rem;
 }
-
-.contact-icons i {
-    margin: 0.3rem;
-    color: #46474C;
-    transition: 0.3s ease-out;
-}
-
-.contact-icons i:hover {
-    font-size: 2.3rem;
-    transition: 0.3s;
-}
-
-
-/* Animations */
-@keyframes name {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        margin-top: 7rem;
-        padding-right: 5rem;
-    }
-}
-
-@keyframes code {
-    0% {
-        margin-left: 30rem;
-        opacity: 0;
-    }
-    100% {
-        margin-left: 0;
-        opacity: 1;
-    }
-}
-
-@keyframes create {
-    0% {
-        margin-left: 30rem;
-        opacity: 0;
-    }
-    100% {
-        margin-left: 0;
-        opacity: 1;
-    }
-}
-
-@keyframes cultivate {
-    0% {
-        margin-left: 30rem;
-        opacity: 0;
-    }
-    100% {
-        margin-left: 0;
-        opacity: 1;
-    }
-}
-
-@keyframes column3-p {
-    0% {
-        margin-top: 30rem;
-        opacity: 0;
-    }
-    100% {
-        margin-top: 0;
-        opacity: 1;
-    }
-}
-
-@keyframes columna {
-    0% {
-        margin-right: 30rem;
-    }
-    100% {
-        margin-right: -3rem;
-    }
-}
-
-@keyframes about-image {
-    0% {
-        margin-left: 30rem;
-    }
-    100% {
-        margin-left: 0;
-    }
-}
-
-@keyframes portfolio2 {
-    0% {
-        margin-right: 15rem;
-        margin-top: 15rem;
-    }
-    100% {
-        margin-right: 3rem;
-        margin-top: 0;
-    }
-}
-
-@keyframes portfolio-right {
-    0% {
-        margin-left: 15rem;
-        margin-top: 15rem;
-    }
-    100% {
-        margin-left: 3rem;
-        margin-top: 0;
-    }
-}
-
-@keyframes goals {
-    0% {
-        margin-top: 15rem;
-    }
-    100% {
-        margin-top: 0;
-    }
-}
-
-
-/* Footer */
-#main-footer {
-    font-family: 'Open Sans Condensed';
-    font-size: 0.7rem;
-    text-align: center;
-    color: #46474C;
-    padding: 0, 0.5rem;
-}
-
-
