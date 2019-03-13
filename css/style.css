@@ -4,6 +4,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    color: #46474C;
     margin: 0;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -19,7 +20,7 @@ html, body {
 .carousel-image {
     width: 100%;
     height: 100%;
-}
+} 
 
 .carousel-container {
     background: white;
@@ -42,20 +43,14 @@ html, body {
     top: 0;
     bottom: 0;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .carousel-card1 {
-    background: url(../img/Background-Header.jpg)
+    background: url(../img/Background-Header.jpg) no-repeat center center/cover;
 }
 
 .carousel-card2 {
-    background: url(../img/background.jpg);
-}
-
-.carousel-card3 {
-    background: url(../img/background1.png);
+    background: url(../img/background.jpg) no-repeat center center/cover;
 }
 
 .carousel-button {
@@ -99,7 +94,6 @@ html, body {
 .header {
     display: flex;
     justify-content: space-between;
-    color: #46474C;
     height: 100%;
 }
 
@@ -128,4 +122,56 @@ html, body {
     justify-content: center;
     text-align: end;
     margin-right: 5rem;
+}
+
+/* About Me */
+.carousel-card2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    display: flex;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    background: #46474C;
+    color: white;
+    width: 12rem;
+    height: 30rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-right: -3rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+    z-index: 1;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-family: "Kristi", sans-serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin: 0;
+}
+
+.about-me h5 {
+    margin: 0;
+}
+
+.about-me p {
+    margin-top: 0.25rem;
+}
+
+.quote {
+    font-size: 0.9rem;
+}
+
+#about img {
+    max-height: 35rem;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
