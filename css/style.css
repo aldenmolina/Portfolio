@@ -53,6 +53,14 @@ html, body {
     background: url(../img/background.jpg) no-repeat center center/cover;
 }
 
+.carousel-card3 {
+    background: url(../img/infographics.jpg) no-repeat center center/cover;
+}
+
+.carousel-card5 {
+    background: url(../img/goals.jpg) no-repeat center center/cover;
+}
+
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -174,4 +182,52 @@ html, body {
 #about img {
     max-height: 35rem;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Goals */
+.carousel-card5 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#goals {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 5rem;
+}
+
+.future {
+    background: #46474C;
+    color: white;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.future h3, .future p {
+    margin: 0;
+    padding: 0.25rem 0;
+}
+
+.past {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: rgba(255,255,255,0.7);
+}
+
+.past h3, .past p {
+    margin: 0;
+    padding: 0.25rem 0;
+}
+
+.experience {
+    display: flex;
+}
+
+.experience1, .experience2 {
+    max-width: 30rem;
+    margin: 0.5rem;
 }
