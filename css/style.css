@@ -189,6 +189,61 @@ html, body {
     box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
+/* Portfolio */
+.carousel-card4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem 8rem;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 15rem;
+    height: 15rem;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
 /* Goals */
 .carousel-card5 {
     display: flex;
@@ -232,6 +287,7 @@ html, body {
 
 .experience {
     display: flex;
+    justify-content: space-between;
 }
 
 .experience1, .experience2 {
@@ -247,7 +303,6 @@ html, body {
     font-family: 'Open Sans Condensed';
     display: flex;
     justify-content: center;
-    margin-bottom: 8rem;
 }
 
 #contact img {
@@ -255,16 +310,18 @@ html, body {
     margin-top: 2rem;
     margin-right: 2rem;
     padding: 1rem;
+    background: rgba(255,255,255,0.1);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
 }
 
 .contact-text {
     max-width: 25rem;
+    max-height: 25rem;
     background: rgba(255,255,255,0.9);  
     color: #46474C;
     margin-top: 2rem;
     padding: 1rem;  
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
 .contact-icons {
